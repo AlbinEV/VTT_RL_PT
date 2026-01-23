@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.venv/
+.conda/
+.env/
+
+# Isaac Lab / RL outputs
+logs/
+outputs/
+results/
+runs/
+checkpoints/
+*.pth
+*.pt
+*.npz
+*.h5
+*.tfevents.*
+
+# Data / exports
+*.csv
+*.jsonl
+*.html
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+*.zip
+*.tar
+*.tar.gz
+
+# Editors
+.vscode/
+.idea/
+.DS_Store
+
+# OS
+Thumbs.db
+

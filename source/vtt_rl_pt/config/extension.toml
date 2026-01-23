@@ -1,0 +1,24 @@
+[package]
+version = "0.0.0"
+category = "isaaclab"
+readme  = "README.md"
+
+title = "VTT RL PT"
+author = ""
+maintainer = ""
+description = "Procedural Trajectory (PT) extension for Isaac Lab 2.0.1."
+repository = ""
+keywords = ["isaaclab", "robotics", "trajectory", "rl"]
+
+[dependencies]
+"isaaclab" = {}
+"isaaclab_assets" = {}
+"isaaclab_rl" = {}
+"isaaclab_tasks" = {}
+
+[[python.module]]
+name = "vtt_rl_pt"
+
+[isaaclab_settings]
+# apt_deps = []
+# ros_ws = ""
