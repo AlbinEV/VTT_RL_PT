@@ -8,9 +8,9 @@ Outputs Plotly HTML files:
   - parameter vs score scatter
   - distributions for kp_z, zeta_z, score
 """
-import _path_setup
-
 from __future__ import annotations
+
+import _path_setup
 
 import argparse
 import csv
