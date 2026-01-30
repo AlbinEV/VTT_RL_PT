@@ -85,4 +85,15 @@ VTT_RL_PT/
 
 ## Citation (TBD)
 
-Add citation info here once the repository is finalized.
+If you use this environment in your research, please cite:
+
+```bibtex
+@software{vtt_rl_pt_2026,
+  title = {Fixed Mode Polishing with Variable Impedance Control for Isaac Lab},
+  author = {Bajrami, Albin},
+  institution = {VTT Technical Research Centre of Finland and Università Politecnica delle Marche},
+  year = {2026},
+  publisher = {GitHub},
+  url = {https://github.com/AlbinEV/VTT_RL_PT}
+}
+```
