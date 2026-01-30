@@ -53,6 +53,10 @@ export VTT_RL_DATA=/path/to/data_root
 
 Default is `VTT_RL_PT/data/`.
 
+## Usage Guide
+
+See `docs/USAGE.md` for the main scripts and workflows.
+
 ## Environment Details (Fixed Mode)
 
 - **Action space**: continuous (impedance modulation along selected axes)
