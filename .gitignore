@@ -37,6 +37,10 @@ checkpoints/
 *.tar
 *.tar.gz
 
+# Allow curated README figures
+!docs/figures/
+!docs/figures/*.png
+
 # Editors
 .vscode/
 .idea/

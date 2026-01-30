@@ -12,6 +12,8 @@ optionally damping) to improve stability under physical variability. Expected ou
 stable trajectory execution, reduced oscillations in contact, and improved robustness compared
 to a fixed-impedance OSC baseline.
 
+![Trajectory comparison (KZ vs KZ+DZ)](docs/figures/trajectory_overlay_kz_kzdz_3d.png)
+
 ## Whats Included
 
 - `source/vtt_rl_pt/robo_pp_fixed/` - Fixed-mode polishing environment (OSC + impedance)
