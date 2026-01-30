@@ -5,6 +5,13 @@ Procedural Trajectory (PT) environment for Isaac Lab 2.0.1.
 This repository hosts the **Fixed Mode** polishing task used in the thesis results, with
 operational-space control (OSC) and variable impedance.
 
+VTT_RL_PT provides a simulation framework to execute a procedural polishing trajectory while
+learning to adapt impedance parameters in contact. The task follows a fixed phase sequence
+(home → approach → contact → lateral motion → rise), and the policy modulates stiffness (and
+optionally damping) to improve stability under physical variability. Expected outcomes are
+stable trajectory execution, reduced oscillations in contact, and improved robustness compared
+to a fixed-impedance OSC baseline.
+
 ## Whats Included
 
 - `source/vtt_rl_pt/robo_pp_fixed/` - Fixed-mode polishing environment (OSC + impedance)
