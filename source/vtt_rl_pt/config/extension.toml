@@ -17,7 +17,7 @@ keywords = ["isaaclab", "robotics", "trajectory", "rl"]
 "isaaclab_tasks" = {}
 
 [[python.module]]
-name = "vtt_rl_pt"
+name = "robo_pp_fixed"
 
 [isaaclab_settings]
 # apt_deps = []

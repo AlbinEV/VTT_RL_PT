@@ -6,6 +6,7 @@ __pycache__/
 *.so
 *.egg-info/
 .eggs/
+*.bak
 .venv/
 .conda/
 .env/
@@ -15,6 +16,7 @@ logs/
 outputs/
 results/
 runs/
+data/
 checkpoints/
 *.pth
 *.pt
@@ -42,4 +44,3 @@ checkpoints/
 
 # OS
 Thumbs.db
-

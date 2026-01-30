@@ -1,0 +1,5 @@
+# Minimal configuration for PolishEnv contact thresholds
+
+# Contact thresholds shared by environment and rewards
+F_TOUCH: -2.0    # [N] contact established below this force value
+F_LOST:  -0.5    # [N] contact considered lost above this force value

@@ -1,15 +1,16 @@
 # VTT_RL_PT: Procedural Trajectory for Robotic Polishing
 
-Procedural Trajectory (PT) environment scaffold for Isaac Lab 2.0.1.
+Procedural Trajectory (PT) environment for Isaac Lab 2.0.1.
 
-This is a public-ready standalone base. The PT code will be migrated here from the private repository.
+This repository hosts the **Fixed Mode** polishing task used in the thesis results, with
+operational-space control (OSC) and variable impedance.
 
 ## Whats Included
 
-- `source/vtt_rl_pt/` - Isaac Lab extension-style package (placeholder)
-- `scripts/` - Train/play utilities (placeholder)
-- `examples/` - Demo trajectories and minimal configs (placeholder)
-- `docs/` - Public documentation (placeholder)
+- `source/vtt_rl_pt/robo_pp_fixed/` - Fixed-mode polishing environment (OSC + impedance)
+- `scripts/` - Training, evaluation, grid search, and analysis scripts
+- `examples/` - Placeholder for demo trajectories/configs (to be added)
+- `docs/` - Placeholder for public docs (thesis figures/snippets can be added later)
 
 ## Quick Start
 
@@ -29,50 +30,55 @@ cd VTT_RL_PT
 python -m pip install -e source/vtt_rl_pt
 ```
 
-### 3. Train (placeholder)
+### 3. Train
 
 ```bash
 cd <ISAAC_LAB_PATH>
 ./isaaclab.sh -p /path/to/VTT_RL_PT/scripts/train.py --num_envs <N> --max_iterations 500
 ```
 
-### 4. Evaluate (placeholder)
+### 4. Evaluate
 
 ```bash
 ./isaaclab.sh -p /path/to/VTT_RL_PT/scripts/play.py --checkpoint <PATH>
 ```
 
-## Environment Details (TBD)
+## Data Root (for scripts)
 
-- Action space: TBD
-- Observation space: TBD
-- Reward: TBD
-- Procedural trajectory generation: TBD
+Many scripts write outputs to a data root. Override it with:
+
+```bash
+export VTT_RL_DATA=/path/to/data_root
+```
+
+Default is `VTT_RL_PT/data/`.
+
+## Environment Details (Fixed Mode)
+
+- **Action space**: continuous (impedance modulation along selected axes)
+- **Observation space**: sequence of robot/joint states + contact + phase info
+- **Trajectory**: fixed procedural keypoints (home → approach → descent → contact → rise)
+- **Control**: OSC with variable impedance (Kp, damping)
 
 ## File Structure
 
 ```
 VTT_RL_PT/
-├── docs/                 # Public documentation
+├── docs/                 # Public documentation (optional)
 ├── examples/             # Demo scripts / trajectories
 ├── scripts/              # Train/play/utility scripts
 ├── source/               # Isaac Lab extension-style package
 │   └── vtt_rl_pt/
 │       ├── config/
 │       │   └── extension.toml
-│       ├── vtt_rl_pt/
-│       │   └── __init__.py
+│       ├── robo_pp_fixed/          # Fixed-mode environment package
+│       ├── vtt_rl_pt/              # Placeholder module
 │       └── setup.py
 ├── LICENSE
 ├── pyproject.toml
 └── .gitignore
 ```
 
-## Configuration (TBD)
-
-Environment variables and config files will be documented here once the PT code is ported.
-
 ## Citation (TBD)
 
-If you use this in research, add a citation here once the repository is public.
-
+Add citation info here once the repository is finalized.
